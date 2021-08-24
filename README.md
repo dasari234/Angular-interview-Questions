@@ -72,3 +72,20 @@ Some other available guards:
 - __CanDeactivate__: Can a user leave a page? For example, they haven't finished editing a post
 - __Resolve__: Grab data before the route is instantiated
 - __CanLoad__: Check to see if we can load the routes assets
+### Q8: What are Observables?  
+__Observables__ are declarative which provide support for passing messages between publishers and subscribers in your application.
+They are mainly used for event handling, asynchronous programming, and handling multiple values. In this case, you define a function for publishing values, but it is not executed until a consumer subscribes to it. The subscribed consumer then receives notifications until the function completes, or until they unsubscribe.
+### Q9:  What is an Observer?  
+__Observer__ is an interface for a consumer of push-based notifications delivered by an Observable.
+### Q10: What is an Observable?  
+An __Observable__ is a unique Object similar to a Promise that can help manage async code. Observables are not part of the JavaScript language so we need to rely on a popular Observable library called RxJS.
+The observables are created using new keyword. Let see the simple example of observable,
+```
+    import { Observable } from 'rxjs';
+
+    const observable = new Observable(observer => {
+      setTimeout(() => {
+        observer.next('Hello from a Observable!');
+      }, 2000);
+    });
+    ```
