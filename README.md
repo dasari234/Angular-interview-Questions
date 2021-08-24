@@ -81,7 +81,7 @@ __Observer__ is an interface for a consumer of push-based notifications delivere
 An __Observable__ is a unique Object similar to a Promise that can help manage async code. Observables are not part of the JavaScript language so we need to rely on a popular Observable library called RxJS.
 The observables are created using new keyword. Let see the simple example of observable,
 ```
-    import { Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
     const observable = new Observable(observer => {
       setTimeout(() => {
