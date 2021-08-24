@@ -88,4 +88,3 @@ import { Observable } from 'rxjs';
         observer.next('Hello from a Observable!');
       }, 2000);
     });
-    ```
